@@ -12,7 +12,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class DashboardComponent implements OnInit {
     public alerts: Array<any> = [];
     public sliders: Array<any> = [];
-    public gcuData = {};
+    public gcuData = { gcu : 
+                      { name : "", lcu : [] },
+                      admin : true,
+                      
+                      };
+    
     // public passed;
     // public stats = this.gcuData.data;
     // public switchData = `${this.stats.activeSwitchCount}/${this.stats.switchCount}`;
