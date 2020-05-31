@@ -11,7 +11,7 @@ import { RestService } from './../../services/rest.service';
 })
 export class TablesComponent implements OnInit {
     lcuId;
-    public lcuData = {};
+    public lcuData = {lcu : { name : "" , switches : [] }, data : { totalPower : 0, activeSwitchCount : 0, sum : 0, highestTemperature : 0  } };
     constructor( private route: ActivatedRoute,
         private router: Router, private restService: RestService) {
             this.route.params.subscribe((params) => this.lcuId = params['id']);
