@@ -14,7 +14,7 @@ import { AuthService } from './../../../services/auth.service';
 })
 export class HeaderComponent implements OnInit {
     public pushRightClass: string;
-    user = {};
+    user : any = {};
 
     constructor(private translate: TranslateService,
         public router: Router,
